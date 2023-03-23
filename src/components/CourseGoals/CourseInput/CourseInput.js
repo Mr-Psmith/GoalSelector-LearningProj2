@@ -26,7 +26,7 @@ const CourseInput = (props) => {
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <div className={`form-control ${!isValid ? "invalid" : "" }`}>  {/* as the className is dynamic we can add and take styles from/to it; ``Because we can inject a dynamic value in this with  and this can be any js expression} */}
+      <div className={`form-control ${!isValid ? "invalid" : "" }`}>  {/* as the className is dynamic we can add and take styles from/to it; ``Because we can inject a dynamic value in this with ${} and this can be any js expression} */}
         <label /* style={{ color: !isValid ? "red" : "black" }} */>Course Goal</label>
         <input
           /* style={{
